@@ -6,7 +6,7 @@ void fun(int n){
         fun(n-2);
         fun(n-3);
     }
-    cout<<n;
+    cout<<n<<" ";
 }
 int main(){
     int n;

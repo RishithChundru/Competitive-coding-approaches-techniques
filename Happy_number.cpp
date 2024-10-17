@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 bool happynumber(int n){
-     unordered_set<int> seen;
+   unordered_set<int> seen;
    while(n!=1 && seen.find(n) == seen.end()){
     seen.insert(n); 
     int num=n;
