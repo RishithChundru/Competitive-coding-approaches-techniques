@@ -268,7 +268,7 @@ int main(){
 
 
 // happy number
-bool happynumber(int n){
+/*bool happynumber(int n){
     unordered_set<int> st;
     while(n!=1 && st.find(n)==st.end()){
         st.insert(n);
@@ -292,4 +292,64 @@ int main(){
         cout<<"yes";
     }
     else cout<<"no";
+}*/
+
+// subset_sum
+/*void subset(int index,vector<int> &ds,vector<int> &arr,int n,int sum,vector<int> &res){
+    if(index==n){
+        if(ds.size()==0){
+            cout<<"0"<<" ";
+        }
+        else{
+            res.push_back(sum);
+        }
+        return;
+    }
+    ds.push_back(arr[index]);
+    subset(index+1,ds,arr,n,sum+arr[index],res);
+    ds.pop_back();
+    subset(index+1,ds,arr,n,sum,res);
+}
+
+int main(){
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    vector<int> arr(n);
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    vector<int> ds;
+    vector<int> res;
+    subset(0,ds,arr,n,0,res);
+    sort(res.begin(),res.end());
+    for(int sum: res){
+        cout<<sum<<" ";
+    }
+}
+*/
+
+// water overflow
+
+int main(){
+    int k,r,c;
+    cout<<"Enter k litres: ";
+    cin>>k;
+    cout<<"Enter row number: ";
+    cin>>r;
+    cout<<"Enter col number: ";
+    cin>>c;
+    double arr[100][100]={0}; 
+    arr[0][0]=k;
+    for(int i=0;i<99;i++){
+        for(int j=0;j<=i;j++){
+            if(arr[i][j]>1.0){
+            double sparse=arr[i][j]-1.0;
+            arr[i][j]=1.0;
+            arr[i+1][j]+=sparse/2.0;
+            arr[i+1][j+1]+=sparse/2.0;
+            }
+        }
+    }
+    cout<<arr[r][c]<<endl;
 }
