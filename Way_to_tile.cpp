@@ -2,7 +2,7 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-/*int count_tile(int n){
+int count_tile(int n){
     if(n==1){
         return 1;
     }
@@ -17,11 +17,10 @@ int main(){
     cin>>size_of_board;
     int res=count_tile(size_of_board);
     cout<<res;
-}*/
-
+}
 // Using Heap
 
-void count_tile(int n){
+/*void count_tile(int n){
     if(n==1){
         cout<<"1";
     }
@@ -43,4 +42,4 @@ int main(){
     cout<<"Enter size of board: ";
     cin>>size_of_board;
     count_tile(size_of_board);
-}
+}*/

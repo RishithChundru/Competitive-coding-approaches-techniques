@@ -51,7 +51,7 @@ int main() {
 
     if (isSumString(str)) {
         cout << "The string is a sum-string." << endl;
-    } else {
+    } else {    
         cout << "The string is not a sum-string." << endl;
     }
 
