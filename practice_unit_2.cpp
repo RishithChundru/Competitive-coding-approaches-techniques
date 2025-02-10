@@ -128,8 +128,8 @@ int main(){
         x[i]=sqrt(n+i*i);
         cout<<x[i]<<" ";
     }
-}*/
-
+}
+*/
 
 
 // Sieve of eratosthenes - O(nloglogn)
@@ -201,7 +201,7 @@ int main() {
 
 // Segmented sieve
 
-/*vector<int> simpleSieve(int limit) {
+/* vector<int> simpleSieve(int limit) {
     vector<bool> isPrime(limit + 1, true);
     vector<int> primes;
 

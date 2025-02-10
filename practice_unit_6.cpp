@@ -227,7 +227,7 @@ int main(){
 }
 */
 
-//  // C++ Program to count all pairs with difference equal to k
+// C++ Program to count all pairs with difference equal to k
 
 
 

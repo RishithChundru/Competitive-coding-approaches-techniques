@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 /*bool ishappy(int n){
-    unordered_set<int> seen;
-    while(n!=1 && seen.find(n)==seen.end()){
-        seen.insert(n);
+    //unordered_set<int> seen;
+    while(n!=1){ // while(n!=1  && seen.find(n)==seen.end()){
+       // seen.insert(n);
         int dig=0;
         int res=0;
         while(n!=0){
